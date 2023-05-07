@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #20B2AA;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #F0FFFF;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #00CED1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Resume</h1>
+  <p>-Shifana</p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Profile</h2>
+    <h5>Photo:</h5>
+   <img src="C:\Users\shifa\Downloads\Profile.01.jpg" alt="purple" width="200" height="200">   
+     <p>Shifana S</p>
+      </div>
+  <div class="main">
+    <h2>Myself</h2>
+           <p> Name: Shifana </p>
+           <p>D.O.B:15/02/2005 </p>
+          <p>Email:953622243092@ritrjpm.ac.in</P>
+        <br>
+    <h2>Education</h2>    
+    <p>10th qualification:90%</p>
+   <p>12th qualification:80%</p>
+   <p>Currently studying:AI and DS </p>
+  <br>
+    <h3>Skills<h3>
+    <p>*Python</p>
+    <p>*Html-basics</p>
+    <p>*Css-basics</p>
+ <br>
+    <h4>Certificates</h4>
+    <p>*Python-introduction to data science and machine learning in Udemy</p>
+    <p>*python contest in Techgig</p>
+    <p>*5 stars in Hackerrank</p>
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Social networks</h2>
+   <a href="https://mail.google.com/mail/u/953622243092@ritrjpm.ac.in">Gmail</a>
+   <a href="https://www.linkedin.com/public-profile/settings">Linkedin</a>
+</div>
+
+</body>
+</html>
